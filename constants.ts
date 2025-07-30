@@ -1,0 +1,51 @@
+
+import { Property, PropertyType, PropertyStatus, SehoreLocality } from './types';
+
+export const INITIAL_PROPERTIES: Property[] = [
+  {
+    id: 'prop1',
+    type: PropertyType.House,
+    status: PropertyStatus.ForSale,
+    locality: SehoreLocality.SehoreTown,
+    address: '123, Housing Board Colony, Sehore',
+    description: 'A beautiful 3BHK villa with a garden and private parking. Recently renovated with modern amenities. Close to the main market and schools.',
+    images: ['https://picsum.photos/seed/house1/800/600', 'https://picsum.photos/seed/house1-2/800/600', 'https://picsum.photos/seed/house1-3/800/600'],
+    listedDate: new Date('2024-07-15T09:00:00Z').toISOString(),
+    basePrice: 5000000,
+    commission: 100000,
+    finalPrice: 5100000,
+  },
+  {
+    id: 'prop2',
+    type: PropertyType.Apartment,
+    status: PropertyStatus.ForRent,
+    locality: SehoreLocality.Mandi,
+    address: 'A-402, Ganga Complex, Mandi Area',
+    description: 'Spacious 2BHK apartment on the 4th floor with a great view. Available for rent for families. 24/7 water and electricity supply.',
+    images: ['https://picsum.photos/seed/apt1/800/600', 'https://picsum.photos/seed/apt1-2/800/600'],
+    listedDate: new Date('2024-07-20T11:30:00Z').toISOString(),
+  },
+  {
+    id: 'prop3',
+    type: PropertyType.Land,
+    status: PropertyStatus.ForSale,
+    locality: SehoreLocality.Ashta,
+    address: 'Plot No. 7, Near Ashta Bypass',
+    description: 'A 2400 sq. ft. plot of land, ideal for residential or commercial construction. Located on the main road with excellent connectivity.',
+    images: ['https://picsum.photos/seed/land1/800/600'],
+    listedDate: new Date('2024-06-30T14:00:00Z').toISOString(),
+    basePrice: 2000000,
+    commission: 50000,
+    finalPrice: 2050000,
+  },
+  {
+    id: 'prop4',
+    type: PropertyType.Commercial,
+    status: PropertyStatus.ForRent,
+    locality: SehoreLocality.Ichhawar,
+    address: 'Shop No. 5, Main Market, Ichhawar',
+    description: 'Prime location shop available for rent in the heart of Ichhawar market. High footfall area suitable for any retail business.',
+    images: ['https://picsum.photos/seed/shop1/800/600', 'https://picsum.photos/seed/shop1-2/800/600'],
+    listedDate: new Date('2024-07-22T18:00:00Z').toISOString(),
+  },
+];

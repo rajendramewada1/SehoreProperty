@@ -1,0 +1,5 @@
+{
+  "name": "Sehore Real Estate",
+  "description": "A web-based real estate platform for the Sehore region where sellers can list properties, buyers can browse and request prices, and an admin controls pricing and commissions.",
+  "requestFramePermissions": []
+}
